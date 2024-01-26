@@ -69,7 +69,6 @@ img {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
 }
 
 .nav-menu {
@@ -84,7 +83,6 @@ img {
     letter-spacing: 0.02em;
     padding-top: 24px;
     padding-bottom: 24px;
-
 }
 
 .page-nav .nav-link:hover,
@@ -124,7 +122,7 @@ img {
 .section-hero {
     background: #2E2F42;
     text-align: center;
-    padding: 188px;
+    padding: 188px 0;
 }
 
 .hero-container {
@@ -138,7 +136,6 @@ img {
     letter-spacing: 0.02em;
     margin-bottom: 48px;
     max-width: 496px;
-    
 }
 
 .order-button {
