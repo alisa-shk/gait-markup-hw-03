@@ -10,13 +10,42 @@ a {
 
 ul {
     list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.header {
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
 }
 
 .page-nav {
-color: #2E2F42;
-font-weight: 500;
-line-height: 1.17;
-letter-spacing: 0.03em;
+    color: #2E2F42;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
 }
 
 .logo {
@@ -27,6 +56,8 @@ letter-spacing: 0.03em;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .logo-part {
@@ -39,11 +70,20 @@ letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
+.nav-menu {
+    display: flex;
+    margin-left: 90px;
+    gap: 40px;
+}
+
 .nav-link {
     color: #2E2F42;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
 }
 
 .page-nav .nav-link:hover,
@@ -54,6 +94,10 @@ letter-spacing: 0.03em;
     letter-spacing: 0.02em;
 }
 
+.contacts-menu {
+    display: flex;
+    gap: 40px;
+}
 
 .header-contacts {
     font-style: normal;
@@ -63,6 +107,8 @@ letter-spacing: 0.03em;
     color: #434455;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-contacts .contacts-link:hover,
@@ -79,13 +125,17 @@ letter-spacing: 0.03em;
     text-align: center;
 }
 
+.hero-container {
+    padding: 188px 316px;
+}
+
 .hero-header {
     color: #FFF;
     font-size: 56px;
-    text-align: center;
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    margin-bottom: 48px;
 }
 
 .order-button {
@@ -95,6 +145,10 @@ letter-spacing: 0.03em;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    padding: 16px 32px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: none;
 }
 
 .order-button:hover,
@@ -104,14 +158,38 @@ letter-spacing: 0.03em;
 
 .section-benefits {
     background: #FFF;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
-.benefits-list {
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.benefits-menu {
+    display: flex;
+    gap: 24px;
+}
+
+.benefits-menu-list {
+    width: calc((100% - 72px) / 4);
+}
+
+.benefits-subtitle {
     color: #2E2F42;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
-    letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .benefits-list-item {
@@ -121,6 +199,8 @@ letter-spacing: 0.03em;
 
 .section-team {
     background: #F4F4FD;
+    padding-top: 120px;
+    padding-bottom: 120px;
 
 }
 
@@ -132,27 +212,85 @@ letter-spacing: 0.03em;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-}
-
-.team-list-field {
-    background: #FFF;
+    margin-bottom: 72px;
 }
 
 .team-list {
+    display: flex;
+    gap: 24px;
+}
+
+
+.team-list-item {
+    background: #FFF;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    padding-bottom: 32px;
+    width: calc(100% - 72px) / 4;
+    text-align: center;
+}
+
+.team-image {
+    margin-bottom: 32px;
+}
+
+.team-list-subtitle {
     color: #2E2F42;
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
-.team-list-item {
+.team-list-descr {
     line-height: 24px;
     letter-spacing: 0.02em;
 }
 
+.section-portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+
+.portfolio-list-item {
+    width: calc(100% - 48px) / 3;
+    border-bottom: 1px solid #E7E9FC;
+    padding-bottom: 32px;
+}
+
+.portfolio-image {
+    margin-bottom: 32px;
+}
+
+.portfolio-list-subtitle {
+    color: #2E2F42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.portfolio-list-descr {
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
 .page-footer {
     background: #2E2F42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .logo-part-footer {
@@ -169,4 +307,6 @@ letter-spacing: 0.03em;
     color: #F4F4FD;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    width: 264px;
+    margin-top: 16px;
 }
