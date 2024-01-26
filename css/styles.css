@@ -27,6 +27,7 @@ img {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+    outline: 1px solid red;
 }
 
 .header {
@@ -68,11 +69,11 @@ img {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
 }
 
 .nav-menu {
     display: flex;
-    margin-left: 90px;
     gap: 40px;
 }
 
@@ -123,10 +124,10 @@ img {
 .section-hero {
     background: #2E2F42;
     text-align: center;
+    padding: 188px;
 }
 
 .hero-container {
-    padding: 188px 316px;
 }
 
 .hero-header {
@@ -136,9 +137,12 @@ img {
     line-height: 1.07;
     letter-spacing: 0.02em;
     margin-bottom: 48px;
+    max-width: 496px;
+    
 }
 
 .order-button {
+    display: block;
     cursor: pointer;
     background: #4D5AE5;
     color: #FFF;
@@ -149,6 +153,8 @@ img {
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border: none;
+    min-width: 169px;
+    margin: 0 auto;
 }
 
 .order-button:hover,
@@ -225,13 +231,11 @@ img {
     background: #FFF;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-    padding-bottom: 32px;
     width: calc(100% - 72px) / 4;
-    text-align: center;
 }
 
-.team-image {
-    margin-bottom: 32px;
+.team-member {
+    padding: 32px 0;
 }
 
 .team-list-subtitle {
@@ -241,11 +245,13 @@ img {
     line-height: 24px;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .team-list-descr {
     line-height: 24px;
     letter-spacing: 0.02em;
+    text-align: center;
 }
 
 .section-portfolio {
@@ -262,11 +268,12 @@ img {
 .portfolio-list-item {
     width: calc(100% - 48px) / 3;
     border-bottom: 1px solid #E7E9FC;
-    padding-bottom: 32px;
 }
 
-.portfolio-image {
-    margin-bottom: 32px;
+.portfolio-card {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .portfolio-list-subtitle {
@@ -293,6 +300,18 @@ img {
     padding-bottom: 100px;
 }
 
+.logo-footer {
+    color: #4D5AE5;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
 .logo-part-footer {
     color: #F4F4FD;
     font-family:'Raleway', sans-serif;
@@ -308,5 +327,4 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     width: 264px;
-    margin-top: 16px;
 }
